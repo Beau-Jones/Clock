@@ -1,0 +1,171 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#digital {
+    align-items: center;
+    position: relative;
+    top: -15%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#circle {
+    display: flex;
+    background-image: url(gear_background.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+    border: 10px solid black;
+    border-radius: 50%;
+    /* box-shadow: 10px 5px 5px red;
+    /* max-width: 600px;
+    min-width: 600px; */
+    position:absolute;
+    top:25%;
+    left:25%;
+}
+
+#one {
+    position:absolute;
+    top: 10%;
+    left: 71%;
+}
+
+#two {
+    position:absolute;
+    top: 24%;
+    left: 88%;
+}
+
+#three {
+    position:absolute;
+    top: 45%;
+    left: 95%;
+}
+
+#four {
+    position:absolute;
+    top: 67%;
+    left: 88%;
+}
+
+#five {
+    position:absolute;
+    top: 85%;
+    left: 71%;
+}
+
+#six {
+    position:absolute;
+    top: 93%;
+}
+
+#seven {
+    position:absolute;
+    top: 85%;
+    left: 29%;
+}
+
+#eight {
+    position:absolute;
+    top: 67%;
+    left: 12%;
+}
+
+#nine {
+    position:absolute;
+    top: 45%;
+    left: 3%;
+}
+
+#ten {
+    position:absolute;
+    top: 24%;
+    left: 10%;
+}
+
+#eleven {
+    position:absolute;
+    top: 10%;
+    left: 26%;
+}
+
+#twelve {
+    position:absolute;
+    top: 3%;
+}
+
+.hours {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: turquoise;
+    border-radius: 50%;
+}
+
+#dot {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0;
+    height: 5%;
+    width: 5%;
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+}
+
+#minute {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+    height: 30%;
+    width: 3%;
+    position: absolute;
+    top: 18%;
+    left: 48.5%;
+    transform-origin: bottom;
+    animation: rotation 3600s infinite linear;
+}
+
+#hour {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(46, 223, 211);
+    margin: 0;
+    height: 23%;
+    width: 3%;
+    position: absolute;
+    top: 25%;
+    left: 48.5%;
+    transform-origin: bottom;
+    animation: rotation 43200s infinite linear;
+}
+
+#second {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    margin: 0;
+    height: 39%;
+    width: 2px;
+    position: absolute;
+    top: 8%;
+    transform-origin: bottom;
+    transform: rotate(-45deg);
+    animation: rotation 60s infinite linear;
+}
+      
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
